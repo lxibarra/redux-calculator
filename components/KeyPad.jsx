@@ -53,7 +53,10 @@ const KeyPad = ()=>(
         </TableRowColumn>
       </TableRow>
       <TableRow >
-        <TableRowColumn colSpan="3">
+        <TableRowColumn>
+            <KeyButton label="0" fullWidth={true} primary={true}  />
+        </TableRowColumn>
+        <TableRowColumn colSpan="2">
             <ResultButton label="=" fullWidth={true} primary={true}  />
         </TableRowColumn>
         <TableRowColumn >

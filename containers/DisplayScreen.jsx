@@ -4,7 +4,7 @@ import DisplayScreen from '../components/DisplayScreen.jsx'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    value:state.inputNumber
+    value:state.calculator.inputNumber
   }
 }
 

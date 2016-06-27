@@ -1,14 +1,8 @@
 import {combineReducers} from 'redux'
-import {inputNumber} from './inputNumber'
-import {currentOperation} from './currentOperation'
-import {memoryNumber} from './memoryNumber'
-import {performOperation} from './performOperation'
+import {calculator} from './calculator'
 
 const calculatorReducers = combineReducers({
-  inputNumber,
-  currentOperation,
-  memoryNumber,
-  performOperation
+  calculator
 })
 
 export default calculatorReducers

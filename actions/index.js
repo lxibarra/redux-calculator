@@ -12,10 +12,10 @@ export const clearNumbers = () => {
   }
 }
 
-export const setCurrentOperation = (operation) => {
+export const setCurrentOperation = (operator) => {
   return {
     type:'SET_CURRENT_OPERATION',
-    operation
+    operator
   }
 }
 
@@ -26,11 +26,8 @@ export const setMemoryNumber = (number) => {
   }
 }
 
-export const performOperation = (operation, numberA, numberB) => {
+export const performOperation = () => {
   return {
-    type:'PERFORM_OPERATION',
-    operation, 
-    numberA,
-    numberB
+    type:'PERFORM_OPERATION'
   }
 }
