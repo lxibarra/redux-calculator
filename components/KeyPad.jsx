@@ -2,6 +2,9 @@ import React from 'react'
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 import KeyButton from '../containers/KeyButton.jsx'
 import ClearButton from '../containers/ClearButton.jsx'
+import OperationButton from '../containers/OperationButton.jsx'
+import ResultButton from '../containers/ResultButton.jsx'
+
 
 const KeyPad = ()=>(
   <div style={{textAlign:'center', marginTop:20}}>
@@ -32,7 +35,7 @@ const KeyPad = ()=>(
             <KeyButton label="6" fullWidth={true} primary={true} />
         </TableRowColumn>
         <TableRowColumn >
-            <KeyButton label="-" fullWidth={true} primary={true}  />
+            <OperationButton label="-" fullWidth={true} primary={true} />
         </TableRowColumn>
       </TableRow>
       <TableRow >
@@ -46,15 +49,15 @@ const KeyPad = ()=>(
             <KeyButton label="3" fullWidth={true} primary={true}  />
         </TableRowColumn>
         <TableRowColumn>
-            <KeyButton label="+" fullWidth={true} secondary={true} />
+            <OperationButton label="+" fullWidth={true} primary={true} />
         </TableRowColumn>
       </TableRow>
       <TableRow >
         <TableRowColumn colSpan="3">
-            <KeyButton label="=" fullWidth={true} primary={true}  />
+            <ResultButton label="=" fullWidth={true} primary={true}  />
         </TableRowColumn>
         <TableRowColumn >
-          <KeyButton label="*" fullWidth={true} secondary={true} />
+          <OperationButton label="*" fullWidth={true} primary={true} />
         </TableRowColumn>
       </TableRow>
     </TableBody>
