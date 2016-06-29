@@ -7,7 +7,7 @@ import ResultButton from '../containers/ResultButton.jsx'
 
 
 const KeyPad = ()=>(
-  <div style={{textAlign:'center', marginTop:20}}>
+  <div style={{marginTop:20}}>
   <Table selectable={false} style={{width:'50%', margin:'0 auto'}}>
     <TableBody displayRowCheckbox={false} >
       <TableRow >

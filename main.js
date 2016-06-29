@@ -14,7 +14,15 @@ import appStyles from './Application-style'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import reducers from './reducers'
-let store = createStore(reducers)
+import configureStore from './store/configureStore'
+let store = configureStore()//createStore(reducers)
+
+/**
+ * Redux debug tools
+ * I dont care loading them this way because this is not a production app
+ */
+import DevTools from './containers/DevTools.jsx'
+//import showDevTools from './showDevTools'
 /**
  * Application
  */
@@ -23,10 +31,14 @@ import App from './pages/App.jsx'
 
 const Holder = () => (
   <Provider store ={store}>
-    <MuiThemeProvider muiTheme={appStyles()}>
-      <App/>
-    </MuiThemeProvider>
+    <div>
+      <MuiThemeProvider muiTheme={appStyles()}>
+        <App/>
+      </MuiThemeProvider>
+      <DevTools/>
+    </div>
   </Provider>
 )
 
 ReactDom.render(<Holder/>, document.getElementById('root'))
+//showDevTools(store);
