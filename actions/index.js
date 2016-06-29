@@ -19,12 +19,6 @@ export const setCurrentOperation = (operator) => {
   }
 }
 
-export const setMemoryNumber = (number) => {
-  return {
-    type:'SET_MEMORY_NUMBER',
-    number
-  }
-}
 
 export const performOperation = () => {
   return {

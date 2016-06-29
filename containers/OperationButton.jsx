@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     clickAction:(e)=>{
       dispatch(setCurrentOperation(ownProps.label))
-      dispatch(setMemoryNumber(number))
+      //dispatch(setMemoryNumber(number))
     }
   }
 }
